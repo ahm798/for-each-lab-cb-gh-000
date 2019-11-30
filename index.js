@@ -1,4 +1,4 @@
-var arr1 = [];
+
 function iterativeLog(array){
   array.forEach((element, index) =>{
     console.log(`${index}: ${element}`);
@@ -6,7 +6,9 @@ function iterativeLog(array){
 }
 
 function iterate(callback){
+  var arr1 = [];
   arr1.forEach(callback);
+  return arr1;
 }
 
 function doToArray(ar, callback){
